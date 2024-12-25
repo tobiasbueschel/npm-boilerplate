@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "node16",
+		"moduleResolution": "node16",
+		"moduleDetection": "force",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"useDefineForClassFields": true,
+		"outDir": "dist",
+		"declaration": true,
+		"types": ["vitest", "node"],
+		"incremental": true,
+		"stripInternal": true,
+		"resolveJsonModule": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitOverride": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedSideEffectImports": true,
+		"noEmitOnError": true,
+		"noImplicitReturns": true,
+		"forceConsistentCasingInFileNames": true,
+		"typeRoots": ["node_modules/@types", "node_modules"],
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "dist"]
+}

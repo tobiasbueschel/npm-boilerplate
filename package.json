@@ -1,0 +1,53 @@
+{
+	"name": "npm-boilerplate",
+	"version": "0.0.0",
+	"description": "Your package description",
+	"author": "Tobias Büschel",
+	"license": "MIT",
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "pnpm@9.15.0",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tobiasbueschel/npm-boilerplate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tobiasbueschel/npm-boilerplate/issues"
+	},
+	"files": [
+		"dist"
+	],
+	"main": "./dist/index.js",
+	"types": "dist/index.d.ts",
+	"module": "./dist/index.js",
+	"exports": {
+		".": {
+			"import": "./dist/index.js"
+		}
+	},
+	"scripts": {
+		"dev": "vite",
+		"test": "vitest",
+		"lint": "eslint 'src/**/*.ts'",
+		"format": "prettier --write '**/*.{ts,js,json,md}'",
+		"format:check": "prettier --check '**/*.{ts,js,json,md}'",
+		"build": "tsc && vite build"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.20.0",
+		"@types/node": "^20.17.19",
+		"eslint": "^9.20.1",
+		"eslint-config-prettier": "^10.0.1",
+		"eslint-import-resolver-typescript": "^3.8.1",
+		"eslint-plugin-import": "^2.31.0",
+		"prettier": "^3.5.1",
+		"typescript": "^5.7.3",
+		"typescript-eslint": "^8.24.1",
+		"vite": "^4.5.5",
+		"vite-plugin-dts": "^4.5.0",
+		"vite-tsconfig-paths": "^4.3.2",
+		"vitest": "^3.0.5"
+	}
+}

@@ -1,0 +1,12 @@
+# Ignore build outputs
+dist/
+build/
+coverage/
+
+# Ignore configuration files
+vite.config.js
+vitest.config.js
+
+# Ignore generated files
+*.d.ts
+*.map
